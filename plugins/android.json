@@ -1,0 +1,30 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-custom-config": {
+      "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-googlemaps": {
+      "API_KEY_FOR_ANDROID": "AIzaSyANqCc_pPnIa9xZ92iT_gaXocQJedL-mNk",
+      "PLAY_SERVICES_VERSION": "15.0.1",
+      "ANDROID_SUPPORT_V4_VERSION": "26.1.0",
+      "PACKAGE_NAME": "com.example.helloworld"
+    }
+  },
+  "dependent_plugins": {}
+}

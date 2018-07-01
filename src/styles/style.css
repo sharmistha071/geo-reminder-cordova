@@ -1,0 +1,78 @@
+.background-red{
+  background-color: #EF5350;
+  height: 100%;
+  width: 100%;
+}
+.color-red{
+  background-color: #EF5350;
+}
+.toolbar-text{
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+}
+.fab--bottom__right {
+    background-color: #ef5350;
+}
+.search-location {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  height: 100%;
+  background-color: #ef5350;
+  border-bottom: 2px solid #31313a;
+  border: none;
+}
+.place-search input{
+  background-color: #ef5350;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  width: 100%;
+}
+.vue-map-container{
+  height: 100% !important;
+}
+.pac-container{
+  width: 350px !important;
+  top: 55px !important;
+}
+.add-form{
+  height: 100%;
+  background-color: #fff;
+}
+.title, .description, .location{
+  width: 100%;
+  margin-top: 20px;
+}
+.input-col{
+  margin: 10px;
+}
+.description{
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #afafaf;
+  background-color: #fff;
+}
+.save-btn{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #ef5350;
+  color: #000;
+}
+.todo-list{
+  margin-top: 40px;
+}
+.list-item{
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.loc-span{
+  margin-left: 7px;
+  color: #717171;
+}
+.zmdi-pin{
+  margin-right: 2px;
+}
