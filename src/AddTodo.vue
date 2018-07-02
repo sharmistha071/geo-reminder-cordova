@@ -47,7 +47,8 @@
          this.pageStack.pop();
        },
        push() {
-         this.$emit('push-page', list);
+         this.pageStack.splice(2);
+         //this.$emit('push-page', list);
          //this.pageStack.push(list);
        },
        saveTodo() {

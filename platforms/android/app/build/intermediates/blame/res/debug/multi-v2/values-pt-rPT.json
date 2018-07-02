@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sndh/test_monaca/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/home/shormy/geo-reminder-cordova/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
-                    "source": "/home/sndh/test_monaca/platforms/android/app/src/main/res/values-pt-rPT/pgm_strings.xml",
+                    "source": "/home/shormy/geo-reminder-cordova/platforms/android/app/src/main/res/values-pt-rPT/pgm_strings.xml",
                     "from": {
                         "startLines": "3,18,2,5,4,6,7,8,9,10,11,12,13,14,17,15,16",
                         "startColumns": "2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/sndh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/266455be165147bebe42dc1d1c6e61b5/res/values-pt-rPT/values-pt-rPT.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "5507",
-                        "endColumns": "100",
-                        "endOffsets": "5603"
-                    }
-                },
-                {
-                    "source": "/home/sndh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ae02384d2bb43d42b14dcf6934eae140/res/values-pt-rPT/values.xml",
+                    "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b1cb4143c60e0f28985f3aa5a7036770/res/values-pt-rPT/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/sndh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/018a471562bb7bb868d0e7b16b58de4a/res/values-pt-rPT/values.xml",
+                    "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/fef9059e5f9ad2d88f5e771acb6c0917/res/values-pt-rPT/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,6 +52,23 @@
                         "startOffsets": "105,212,407,537,647,874,1004,1156,1498,1745,1855,2056,2189,2407,2615,2713,2812",
                         "endColumns": "106,194,129,109,226,129,151,137,246,109,200,132,217,207,97,98,115",
                         "endOffsets": "207,402,532,642,869,999,1151,1289,1740,1850,2051,2184,2402,2610,2708,2807,2923"
+                    }
+                },
+                {
+                    "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4cea90edb168777afdb731bd0da62ff0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "5507",
+                        "endColumns": "100",
+                        "endOffsets": "5603"
                     }
                 }
             ]

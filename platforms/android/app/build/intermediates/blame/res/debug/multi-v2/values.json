@@ -1,44 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sndh/test_monaca/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/shormy/geo-reminder-cordova/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/sndh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/018a471562bb7bb868d0e7b16b58de4a/res/values/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "215,301,377,463,549,625,702,778,951,1052,1233,1354,1457,1637,1756,1868,1967,2155,2256,2437,2558,2733,2877,2936,2994",
-                        "endColumns": "85,75,85,85,75,76,75,75,100,180,120,102,179,118,111,98,187,100,180,120,174,143,58,57,74",
-                        "endOffsets": "300,376,462,548,624,701,777,853,1051,1232,1353,1456,1636,1755,1867,1966,2154,2255,2436,2557,2732,2876,2935,2993,3068"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,97,98,99,100,101,102,103,104,106,107,108,109,110,111,112,113,114",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,195,275,365,455,535,616,696,6091,6196,6377,6502,6609,6789,6912,7028,7298,7486,7591,7772,7897,8072,8220,8283,8345",
-                        "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78",
-                        "endOffsets": "190,270,360,450,530,611,691,771,6191,6372,6497,6604,6784,6907,7023,7126,7481,7586,7767,7892,8067,8215,8278,8340,8419"
-                    }
-                },
-                {
-                    "source": "/home/sndh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ae02384d2bb43d42b14dcf6934eae140/res/values/values.xml",
-                    "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "238,401",
-                        "endColumns": "63,166",
-                        "endOffsets": "301,567"
-                    },
-                    "to": {
-                        "startLines": "93,105",
-                        "startColumns": "4,4",
-                        "startOffsets": "5840,7131",
-                        "endColumns": "67,166",
-                        "endOffsets": "5903,7293"
-                    }
-                },
-                {
-                    "source": "/home/sndh/test_monaca/platforms/android/app/src/main/res/values/pgm_strings.xml",
+                    "source": "/home/shormy/geo-reminder-cordova/platforms/android/app/src/main/res/values/pgm_strings.xml",
                     "from": {
                         "startLines": "3,18,2,5,4,6,7,8,9,10,11,12,13,14,17,15,16",
                         "startColumns": "2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2",
@@ -55,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/sndh/test_monaca/platforms/android/app/src/main/res/values/strings.xml",
+                    "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/fef9059e5f9ad2d88f5e771acb6c0917/res/values/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "215,301,377,463,549,625,702,778,951,1052,1233,1354,1457,1637,1756,1868,1967,2155,2256,2437,2558,2733,2877,2936,2994",
+                        "endColumns": "85,75,85,85,75,76,75,75,100,180,120,102,179,118,111,98,187,100,180,120,174,143,58,57,74",
+                        "endOffsets": "300,376,462,548,624,701,777,853,1051,1232,1353,1456,1636,1755,1867,1966,2154,2255,2436,2557,2732,2876,2935,2993,3068"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,97,98,99,100,101,102,103,104,106,107,108,109,110,111,112,113,114",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,195,275,365,455,535,616,696,6091,6196,6377,6502,6609,6789,6912,7028,7298,7486,7591,7772,7897,8072,8220,8283,8345",
+                        "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78",
+                        "endOffsets": "190,270,360,450,530,611,691,771,6191,6372,6497,6604,6784,6907,7023,7126,7481,7586,7767,7892,8067,8215,8278,8340,8419"
+                    }
+                },
+                {
+                    "source": "/home/shormy/geo-reminder-cordova/platforms/android/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
@@ -72,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/sndh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/266455be165147bebe42dc1d1c6e61b5/res/values/values.xml",
+                    "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4cea90edb168777afdb731bd0da62ff0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,53,54,58,59,60",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -91,7 +74,7 @@
                     }
                 },
                 {
-                    "source": "/home/sndh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/56132cceb700308c251076e6638bae42/res/values/values.xml",
+                    "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b1f54eb160e3f3129e562cd88dfe7643/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -105,6 +88,23 @@
                         "startOffsets": "908,997,1126,5780,11401,11577,11699,11961,12156",
                         "endColumns": "88,70,72,59,65,121,60,65,66",
                         "endOffsets": "992,1063,1194,5835,11462,11694,11755,12022,12218"
+                    }
+                },
+                {
+                    "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b1cb4143c60e0f28985f3aa5a7036770/res/values/values.xml",
+                    "from": {
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "238,401",
+                        "endColumns": "63,166",
+                        "endOffsets": "301,567"
+                    },
+                    "to": {
+                        "startLines": "93,105",
+                        "startColumns": "4,4",
+                        "startOffsets": "5840,7131",
+                        "endColumns": "67,166",
+                        "endOffsets": "5903,7293"
                     }
                 }
             ]

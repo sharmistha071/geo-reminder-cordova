@@ -4,7 +4,7 @@
   "description": "",
   "dependencies": {
     "axios": "^0.18.0",
-    "cordova-android": "^7.1.0",
+    "cordova-android": "^7.0.0",
     "cordova-custom-config": "^5.0.2",
     "cordova-plugin-geolocation": "^4.0.1",
     "cordova-plugin-googlemaps": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
