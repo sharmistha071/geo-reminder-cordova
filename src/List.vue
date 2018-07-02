@@ -2,18 +2,10 @@
   <v-ons-page>
     <custom-toolbar>Todos</custom-toolbar>
     <div>
-      <!-- <ons-gesture-detector>
-        <div id="detect-area" style="width: 100px; height: 100px;">
-          <ul>
-            <li style="background-color: #fff; margin-bottom:20px; height: 50px; width: 100%;">Item 1</li>
-            <li style="background-color: #fff; width: 100%;">Item 2</li>
-          </ul>
-        </div>
-      </ons-gesture-detector> -->
       <ons-gesture-detector>
         <v-ons-list v-for="(todo, index) in todos" id="detect-area">
           <v-ons-list-item class="list-item" :id="index">{{todo.title}} <span class="loc-span"><v-ons-icon icon="md-pin"></v-ons-icon>{{todo.place_name}}</span>
-            <div class="right"><v-ons-icon icon="md-edit"></v-ons-icon></div>
+            <div class="right"><v-ons-icon icon="md-edit" @click="editTodo(index)"></v-ons-icon></div>
           </v-ons-list-item>
         </v-ons-list>
       </ons-gesture-detector>
@@ -27,6 +19,7 @@
 <script>
   import customToolbar from './CustomToolbar';
   import placeSearch from './PlaceSearch';
+  import editTodo from './EditTodo';
   import axios from 'axios';
 
   export default {
@@ -54,6 +47,11 @@
           }).catch(function (error) {
               console.log(error);
           });
+       },
+       editTodo(id) {
+         console.log(id);
+         let key = this.todos[id].id;
+         this.pageStack.push(editTodo);
        },
        deleteItem(id) {
          let key = this.todos[id].id;

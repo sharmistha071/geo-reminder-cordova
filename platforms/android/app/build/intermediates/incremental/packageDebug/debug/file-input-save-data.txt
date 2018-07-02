@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jul 02 12:45:40 BDT 2018
+#Mon Jul 02 13:21:17 BDT 2018
 14.set=ASSET
 180.file=/home/shormy/geo-reminder-cordova/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xhdpi-v4/googleg_disabled_color_18.png
 118.set=ANDROID_RESOURCE
