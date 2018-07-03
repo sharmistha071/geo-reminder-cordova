@@ -22,6 +22,10 @@ Vue.use(VueGoogleMaps, {
 });
 
 
+var eventBus = new Vue();
+
+Vue.prototype.$eventBus = eventBus;
+
 new Vue({
   el: '#app',
   store,

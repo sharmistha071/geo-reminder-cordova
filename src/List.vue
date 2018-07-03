@@ -51,7 +51,9 @@
        editTodo(id) {
          console.log(id);
          let key = this.todos[id].id;
-         this.pageStack.push();
+         console.log(key);
+         this.$store.commit('setEditId', key);
+         this.pageStack.push(editTodo);
        },
        deleteItem(id) {
          let key = this.todos[id].id;

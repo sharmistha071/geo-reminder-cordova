@@ -12,7 +12,8 @@ export default new Vuex.Store({
       long: '',
       title: '',
       description: ''
-    }
+    },
+    editId: null
   },
   mutations: {
     setDeviceLocation (state, deviceLocation) {
@@ -27,6 +28,9 @@ export default new Vuex.Store({
     setTodo (state, todo){
       state.todo.title = todo.title;
       state.todo.description = todo.description;
+    },
+    setEditId (state, id){
+      state.editId = id;
     }
   }
 })

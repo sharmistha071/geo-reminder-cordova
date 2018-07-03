@@ -4,7 +4,7 @@
     <div class="add-form">
       <v-ons-row>
         <v-ons-col class="input-col">
-          <v-ons-input placeholder="Location" class="location" float input-id="Location" modifier="material" v-model="location"></v-ons-input>
+          <v-ons-input placeholder="Location" class="location" float input-id="Location" modifier="material" v-model="todo.place_name"></v-ons-input>
         </v-ons-col>
       </v-ons-row>
       <v-ons-row>
@@ -18,7 +18,7 @@
         </v-ons-col>
       </v-ons-row>
       <v-ons-row>
-        <v-ons-button @click="saveTodo" class="save-btn">
+        <v-ons-button @click="editTodo" class="save-btn">
             <v-ons-icon></v-ons-icon>
             Save
         </v-ons-button>
@@ -35,8 +35,10 @@
   export default {
     data(){
       return{
-        location: '',
         todo: {
+          place_name: '',
+          lat: '',
+          long: '',
           title: '',
           description: ''
         }
@@ -45,25 +47,34 @@
      methods: {
        pop(){
          this.pageStack.pop();
+         this.$eventBus.$emit("refreshItem");
        },
        push() {
          this.pageStack.splice(2);
-         //this.$emit('push-page', list);
-         //this.pageStack.push(list);
        },
-       saveTodo() {
-         this.$store.commit('setTodo', this.todo);
-         console.log(this.$store.state.todo);
-         axios.post('https://keep-reminder.firebaseio.com/todos.json', this.$store.state.todo).then(response => {
+       getTodo(id) {
+         axios.get('https://keep-reminder.firebaseio.com/todos/' + id + '.json').then(response => {
+           this.todo.title = response.data.title;
+           this.todo.description = response.data.description;
+           this.todo.place_name = response.data.place_name;
+           this.todo.lat = response.data.lat;
+           this.todo.long = response.data.long;
+         }).catch(function (error) {
+              console.log(error);
+          });
+       },
+       editTodo() {
+         let id = this.$store.state.editId;
+         axios.patch('https://keep-reminder.firebaseio.com/todos/' + id + '.json', this.todo).then(response => {
             console.log('submited');
-            this.push();
+            this.pop();
           }).catch(error => {
             this.errors.push(error);
           })
        }
      },
      mounted(){
-       this.location = this.$store.state.todo.place_name;
+       this.getTodo(this.$store.state.editId);
      },
      props: ['pageStack'],
      components: { customToolbar }
