@@ -19,7 +19,7 @@
 <script>
   import customToolbar from './CustomToolbar';
   import placeSearch from './PlaceSearch';
-  import editTodo from './EditTodo';
+  import editTodo from './EditTodo'
   import axios from 'axios';
 
   export default {
@@ -51,7 +51,7 @@
        editTodo(id) {
          console.log(id);
          let key = this.todos[id].id;
-         this.pageStack.push(editTodo);
+         this.pageStack.push();
        },
        deleteItem(id) {
          let key = this.todos[id].id;
@@ -62,10 +62,11 @@
           });
        }
      },
-     updated() {
-       this.getLists();
+     beforeUpdate() {
+      // this.getLists();
      },
      mounted() {
+       let that = this;
        this.getLists();
        document.addEventListener('swiperight', (event) => {
           if (event.target.matches('#detect-area .list-item .list-item__center')) {
@@ -73,6 +74,10 @@
             event.target.parentNode.remove();
             this.deleteItem(item_id);
           }
+        });
+
+        this.$eventBus.$on("refreshItem", function(){
+          that.getLists();
         });
      },
      props: ['pageStack'],

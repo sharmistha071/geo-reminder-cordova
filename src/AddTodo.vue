@@ -50,6 +50,7 @@
          this.pageStack.splice(2);
          //this.$emit('push-page', list);
          //this.pageStack.push(list);
+         this.$eventBus.$emit("refreshItem");
        },
        saveTodo() {
          this.$store.commit('setTodo', this.todo);
