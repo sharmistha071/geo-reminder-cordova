@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-30:12
 MERGED from [:tbxml-android:] /home/shormy/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/ca6396b3d8ad56f84b2a9fa727a06a69/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/d2c44b31552469ce753014a52f3d3409/AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/f0df8fb61d4960e871e8e3030f282b78/AndroidManifest.xml:2:1-9:12
@@ -19,9 +19,9 @@ MERGED from [com.android.support:support-media-compat:26.1.0] /home/shormy/.grad
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/shormy/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/de986ab903a8ec28c1ecde85ae435248/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/shormy/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4cea90edb168777afdb731bd0da62ff0/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/shormy/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/0efd2e54bc3abf3ece504840f8bc8db4/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:102-134
 		INJECTED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml
@@ -59,7 +59,7 @@ MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gra
 	android:name
 		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:5:5-14:19
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:5:5-20:19
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/d2c44b31552469ce753014a52f3d3409/AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/d2c44b31552469ce753014a52f3d3409/AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/f0df8fb61d4960e871e8e3030f282b78/AndroidManifest.xml:7:5-20
@@ -134,8 +134,26 @@ MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/shormy/
 		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:13:66-119
 	android:name
 		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:13:20-65
+service#com.cowbell.cordova.geofence.ReceiveTransitionsIntentService
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:14:9-154
+	android:label
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:14:43-75
+	android:exported
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:14:18-42
+	android:name
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:14:76-151
+receiver#com.cowbell.cordova.geofence.BootReceiver
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:9-19:20
+	android:name
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:19-75
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:16:13-18:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:17:17-79
+	android:name
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:17:25-76
 uses-sdk
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:5-74
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:5-74
 MERGED from [:tbxml-android:] /home/shormy/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/ca6396b3d8ad56f84b2a9fa727a06a69/AndroidManifest.xml:7:5-9:41
 MERGED from [:tbxml-android:] /home/shormy/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/ca6396b3d8ad56f84b2a9fa727a06a69/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/d2c44b31552469ce753014a52f3d3409/AndroidManifest.xml:20:5-44
@@ -169,39 +187,47 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/shormy/.gradle/caches/t
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] /home/shormy/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/255e73fd129a562eb8d436415f7ae4ed/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:42-71
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:42-71
 	android:minSdkVersion
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:15-41
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:15-41
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:16:5-81
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:16:22-78
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:22:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:17:5-79
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:17:22-76
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:23:22-76
 uses-feature#android.hardware.location.gps
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:5-66
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:24:5-66
 	android:name
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:19-63
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:24:19-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:19:5-79
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/d2c44b31552469ce753014a52f3d3409/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/d2c44b31552469ce753014a52f3d3409/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:19:22-76
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:25:22-76
 uses-feature#0x00020000
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:20:5-78
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:26:5-78
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/d2c44b31552469ce753014a52f3d3409/AndroidManifest.xml:26:5-28:35
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/d2c44b31552469ce753014a52f3d3409/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:20:19-51
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:26:19-51
 	android:required
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:20:52-75
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:26:52-75
 uses-feature#android.hardware.location
-ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:5-62
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:27:5-62
 	android:name
-		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:19-59
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:27:19-59
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:28:5-81
+	android:name
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:28:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:29:5-66
+	android:name
+		ADDED from /home/shormy/geo-reminder-cordova/platforms/android/app/src/main/AndroidManifest.xml:29:22-63
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/fef9059e5f9ad2d88f5e771acb6c0917/AndroidManifest.xml:23:9-26:75
 	android:exported

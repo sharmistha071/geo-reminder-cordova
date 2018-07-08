@@ -233,6 +233,28 @@ module.exports = [
     "clobbers": [
       "navigator.splashscreen"
     ]
+  },
+  {
+    "id": "es6-promise-plugin.Promise",
+    "file": "plugins/es6-promise-plugin/www/promise.js",
+    "pluginId": "es6-promise-plugin",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-geofence.TransitionType",
+    "file": "plugins/cordova-plugin-geofence/www/TransitionType.js",
+    "pluginId": "cordova-plugin-geofence",
+    "clobbers": [
+      "TransitionType"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geofence.geofence",
+    "file": "plugins/cordova-plugin-geofence/www/geofence.js",
+    "pluginId": "cordova-plugin-geofence",
+    "clobbers": [
+      "geofence"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -242,7 +264,10 @@ module.exports.metadata =
   "cordova-plugin-geolocation": "4.0.1",
   "cordova-plugin-googlemaps": "2.3.7-beta-20180606-1254",
   "cordova-plugin-splashscreen": "5.0.1",
-  "cordova-plugin-whitelist": "1.3.3"
+  "cordova-plugin-whitelist": "1.3.3",
+  "cordova-plugin-add-swift-support": "1.7.2",
+  "es6-promise-plugin": "4.2.2",
+  "cordova-plugin-geofence": "0.7.0"
 };
 // BOTTOM OF METADATA
 });

@@ -11,6 +11,12 @@
               Enable GPS
           </v-ons-button>
         </div>
+        <div class="row">
+          <v-ons-button @click="openGeo" class="gps-btn">
+              <v-ons-icon></v-ons-icon>
+              Tap me
+          </v-ons-button>
+        </div>
       </div>
     </div>
   </v-ons-page>
@@ -49,7 +55,29 @@
             alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
           };
           navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        },
+        openGeo(){
+          document.addEventListener('deviceready', function () {
+              alert("geofence initialization");
+            // window.geofence is now available
+              window.geofence.initialize().then(function () {
+                  alert("Successful initialization");
+              }, function (error) {
+                  console.log("Error", error);
+              });
+          }, false);
         }
+     },
+     mounted(){
+       document.addEventListener('deviceready', function () {
+           alert("geofence initialization");
+         // window.geofence is now available
+           window.geofence.initialize().then(function () {
+               alert("Successful initialization");
+           }, function (error) {
+               console.log("Error", error);
+           });
+       }, false);
      },
      props: ['pageStack'],
   }

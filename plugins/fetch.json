@@ -40,5 +40,37 @@
     "variables": {
       "API_KEY_FOR_ANDROID": "AIzaSyANqCc_pPnIa9xZ92iT_gaXocQJedL-mNk"
     }
+  },
+  "cordova-plugin-add-swift-support": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-add-swift-support@^1.6.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-compat": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-compat@^1.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "es6-promise-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "es6-promise-plugin"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-geofence": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geofence"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

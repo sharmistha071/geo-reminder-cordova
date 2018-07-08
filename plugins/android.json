@@ -24,7 +24,17 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-geofence": {
+      "PACKAGE_NAME": "com.example.helloworld"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.example.helloworld"
+    }
+  }
 }

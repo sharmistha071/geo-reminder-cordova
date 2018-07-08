@@ -14,6 +14,17 @@
       return {
         pageStack: [homeScreen]
       }
+    },
+    mounted() {
+      // document.addEventListener('deviceready', function () {
+      //     aler("geofence initialization");
+      //   // window.geofence is now available
+      //     window.geofence.initialize().then(function () {
+      //         aler("Successful initialization");
+      //     }, function (error) {
+      //         console.log("Error", error);
+      //     });
+      // }, false);
     }
   }
 </script>
