@@ -31,6 +31,7 @@
   import customToolbar from './CustomToolbar';
   import placeSearch from './PlaceSearch';
   import list from './List'
+  const uuidv1 = require('uuid/v1');
 
   export default {
     data(){
@@ -55,6 +56,27 @@
        saveTodo() {
          this.$store.commit('setTodo', this.todo);
          console.log(this.$store.state.todo);
+         window.geofence.addOrUpdate({
+             id:             uuidv1(), //A unique identifier of geofence
+             latitude:       this.$store.state.todo.lat, //Geo latitude of geofence
+             longitude:      this.$store.state.todo.long, //Geo longitude of geofence
+             radius:         3000, //Radius of geofence in meters
+             transitionType: 3, //Type of transition 1 - Enter, 2 - Exit, 3 - Both
+             notification: {         //Notification object
+                 id:             1, //optional should be integer, id of notification
+                 title:          this.todo.title, //Title of notification
+                 text:           this.todo.descrition, //Text of notification
+                 smallIcon:      './assets/loc_icon.png', //Small icon showed in notification area, only res URI
+                 icon:           './assets/loc_icon.png', //icon showed in notification drawer
+                 openAppOnClick: true,//is main app activity should be opened after clicking on notification
+                 vibration:      [1000], //Optional vibration pattern - see description
+                 data:           {}  //Custom object associated with notification
+             }
+         }).then(function () {
+             alert('Geofence successfully added');
+         }, function (error) {
+            alert('Adding geofence failed', error);
+         });
          axios.post('https://keep-reminder.firebaseio.com/todos.json', this.$store.state.todo).then(response => {
             console.log('submited');
             this.push();
