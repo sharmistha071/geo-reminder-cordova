@@ -30,6 +30,9 @@
     },
     "cordova-plugin-geofence": {
       "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.example.helloworld"
     }
   },
   "dependent_plugins": {

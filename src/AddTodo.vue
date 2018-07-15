@@ -56,11 +56,14 @@
        saveTodo() {
          this.$store.commit('setTodo', this.todo);
          console.log(this.$store.state.todo);
+         //console.log(this.$store.state.todo);
+         let geoFenceId = uuidv1();
+         this.$store.commit('setGeoFenceId', geoFenceId);
          window.geofence.addOrUpdate({
-             id:             uuidv1(), //A unique identifier of geofence
+             id:             geoFenceId, //A unique identifier of geofence
              latitude:       this.$store.state.todo.lat, //Geo latitude of geofence
              longitude:      this.$store.state.todo.long, //Geo longitude of geofence
-             radius:         3000, //Radius of geofence in meters
+             radius:         50, //Radius of geofence in meters
              transitionType: 3, //Type of transition 1 - Enter, 2 - Exit, 3 - Both
              notification: {         //Notification object
                  id:             1, //optional should be integer, id of notification
@@ -72,17 +75,18 @@
                  vibration:      [1000], //Optional vibration pattern - see description
                  data:           {}  //Custom object associated with notification
              }
-         }).then(function () {
-             alert('Geofence successfully added');
-         }, function (error) {
-            alert('Adding geofence failed', error);
+         }).then(() => {
+             console.log('Geofence successfully added');
+         },function (error) {
+            console.log('Adding geofence failed', error);
          });
-         axios.post('https://keep-reminder.firebaseio.com/todos.json', this.$store.state.todo).then(response => {
+
+         axios.post('https://keep-reminder.firebaseio.com/todos/'+ this.$store.state.device_uuid +'.json', this.$store.state.todo).then(response => {
             console.log('submited');
             this.push();
           }).catch(error => {
             this.errors.push(error);
-          })
+          });
        }
      },
      mounted(){

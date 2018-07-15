@@ -11,11 +11,17 @@ export default new Vuex.Store({
       lat: '',
       long: '',
       title: '',
-      description: ''
+      description: '',
+      geoFenceId: null,
+      device_uuid: null
     },
-    editId: null
+    editId: null,
+    device_uuid: null
   },
   mutations: {
+    setDeviceUUID (state, id){
+      state.device_uuid = id;
+    },
     setDeviceLocation (state, deviceLocation) {
       state.lat = deviceLocation.lat;
       state.long = deviceLocation.long;
@@ -31,6 +37,9 @@ export default new Vuex.Store({
     },
     setEditId (state, id){
       state.editId = id;
+    },
+    setGeoFenceId (state, id){
+      state.todo.geoFenceId = id;
     }
   }
 })

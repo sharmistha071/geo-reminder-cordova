@@ -6,10 +6,11 @@
           <img src="./assets/loc_icon.png" class="loc_icon">
         </div>
         <div class="row">
-          <v-ons-button @click="openGPS" class="gps-btn">
+          <p>Welcome to geo reminder</p>
+          <!-- <v-ons-button @click="openGPS" class="gps-btn">
               <v-ons-icon></v-ons-icon>
               Enable GPS
-          </v-ons-button>
+          </v-ons-button> -->
         </div>
       </div>
     </div>
@@ -17,6 +18,7 @@
 </template>
 
 <script>
+  import axios from 'axios';
   import customToolbar from './CustomToolbar';
   import list from './List';
   export default {
@@ -27,7 +29,7 @@
           long: ''
         }
       }
-    },
+     },
      methods: {
        pop(){
          this.pageStack.pop();
@@ -35,35 +37,25 @@
        push() {
          this.pageStack.push(list);
        },
-       openGPS() {
-         let onSuccess = (position) => {
-            console.log(this.$store);
-            this.deviceLocation.lat = position.coords.latitude;
-            this.deviceLocation.long = position.coords.longitude;
-            this.$store.commit('setDeviceLocation', this.deviceLocation);
-            console.log(this.$store.state.lat);
-            console.log(this.$store.state.long);
-            this.push();
-          };
-          function onError(error) {
-            alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
-          };
-          navigator.geolocation.getCurrentPosition(onSuccess, onError);
-        },
-        openGeo(){
-
-        }
+       saveDeviceUUID(id){
+         this.$store.commit('setDeviceUUID', id);
+       },
      },
      mounted(){
-       document.addEventListener('deviceready', function () {
-           //alert("geofence initialization");
-         // window.geofence is now available
+       document.addEventListener('deviceready', () => {
+           this.saveDeviceUUID(device.uuid);
+           if(localStorage.getIte())
+           localStorage.setItem('device_uuid', device.uuid);
            window.geofence.initialize().then(function () {
                console.log("Successful initialization");
            }, function (error) {
                console.log("Error", error);
            });
        }, false);
+
+       setTimeout(() => {
+         this.push();
+       }, 1000);
      },
      props: ['pageStack'],
   }

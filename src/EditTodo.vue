@@ -40,7 +40,8 @@
           lat: '',
           long: '',
           title: '',
-          description: ''
+          description: '',
+          geoFenceId: null
         }
       }
     },
@@ -53,20 +54,43 @@
          this.pageStack.splice(2);
        },
        getTodo(id) {
-         axios.get('https://keep-reminder.firebaseio.com/todos/' + id + '.json').then(response => {
+         axios.get('https://keep-reminder.firebaseio.com/todos/' + this.$store.state.device_uuid + '/' + id + '.json').then(response => {
            this.todo.title = response.data.title;
            this.todo.description = response.data.description;
            this.todo.place_name = response.data.place_name;
            this.todo.lat = response.data.lat;
            this.todo.long = response.data.long;
+           this.todo.geoFenceId = response.data.geoFenceId;
          }).catch(function (error) {
               console.log(error);
           });
        },
        editTodo() {
          let id = this.$store.state.editId;
-         axios.patch('https://keep-reminder.firebaseio.com/todos/' + id + '.json', this.todo).then(response => {
-            console.log('submited');
+         axios.patch('https://keep-reminder.firebaseio.com/todos/' + this.$store.state.device_uuid + '/' + id + '.json', this.todo).then(response => {
+            //console.log(response);
+            window.geofence.addOrUpdate({
+                id:             response.data.geoFenceId, //A unique identifier of geofence
+                latitude:       response.data.lat, //Geo latitude of geofence
+                longitude:      response.data.long, //Geo longitude of geofence
+                radius:         50, //Radius of geofence in meters
+                transitionType: 3, //Type of transition 1 - Enter, 2 - Exit, 3 - Both
+                notification: {         //Notification object
+                    id:             1, //optional should be integer, id of notification
+                    title:          response.data.title, //Title of notification
+                    text:           response.data.descrition, //Text of notification
+                    smallIcon:      './assets/loc_icon.png', //Small icon showed in notification area, only res URI
+                    icon:           './assets/loc_icon.png', //icon showed in notification drawer
+                    openAppOnClick: true,//is main app activity should be opened after clicking on notification
+                    vibration:      [1000], //Optional vibration pattern - see description
+                    data:           {}  //Custom object associated with notification
+                }
+            }).then(response => {
+                console.log('Geofence successfully edited');
+                //alert(response);
+            },function (error) {
+               alert('Adding geofence failed', error);
+            });
             this.pop();
           }).catch(error => {
             this.errors.push(error);

@@ -100,12 +100,12 @@
         "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/fef9059e5f9ad2d88f5e771acb6c0917/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
-        "merged": "/home/shormy/geo-reminder-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4cea90edb168777afdb731bd0da62ff0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
-    },
-    {
         "merged": "/home/shormy/geo-reminder-cordova/platforms/android/app/build/intermediates/res/merged/debug/mipmap-ldpi_icon.png.flat",
         "source": "/home/shormy/geo-reminder-cordova/platforms/android/app/src/main/res/mipmap-ldpi/icon.png"
+    },
+    {
+        "merged": "/home/shormy/geo-reminder-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/shormy/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4cea90edb168777afdb731bd0da62ff0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/home/shormy/geo-reminder-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_normal.xml.flat",
