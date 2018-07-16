@@ -5,13 +5,9 @@
         <div class="row">
           <img src="./assets/loc_icon.png" class="loc_icon">
         </div>
-        <div class="row">
-          <p>Welcome to geo reminder</p>
-          <!-- <v-ons-button @click="openGPS" class="gps-btn">
-              <v-ons-icon></v-ons-icon>
-              Enable GPS
-          </v-ons-button> -->
-        </div>
+      </div>
+      <div class="row welcome-msg">
+        <p>Welcome to geo reminder</p>
       </div>
     </div>
   </v-ons-page>
@@ -80,7 +76,13 @@
   .centerDiv{
     position: absolute;
     top: 50%;
-    left: 55%;
-    transform: translate(-50%, -55%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .welcome-msg{
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%, -50%);
   }
 </style>

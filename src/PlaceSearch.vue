@@ -71,7 +71,7 @@
 
           setTimeout(() => {
             this.push();
-          }, 1500);
+          }, 1000);
         }
       },
       geolocate: function() {

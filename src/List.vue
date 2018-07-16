@@ -2,6 +2,7 @@
   <v-ons-page>
     <custom-toolbar>Todos</custom-toolbar>
     <div>
+      <p v-show="listEmpty" class="list-empty-msg">To add an item please click the button</p>
       <ons-gesture-detector>
         <v-ons-list v-for="(todo, index) in todos">
           <v-ons-list-item class="list-item" :id="index">{{todo.title}} <span class="loc-span"><v-ons-icon icon="md-pin"></v-ons-icon>{{todo.place_name}}</span>
@@ -115,6 +116,22 @@
         });
      },
      props: ['pageStack'],
-     components: { customToolbar }
+     components: { customToolbar },
+     computed: {
+       listEmpty: function(){
+         return this.todos.length === 0;
+         // if(this.todos.length === 0){
+         //   return true;
+         // }else{
+         //   return false;
+         // }
+       }
+     }
   }
 </script>
+<style>
+.list-empty-msg{
+  color: #717171;
+  padding-left: 10px;
+}
+</style>

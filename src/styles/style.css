@@ -34,6 +34,9 @@
 .vue-map-container{
   height: 100% !important;
 }
+.pac-item{
+  padding: 5px 5px;
+}
 .pac-container{
   width: 350px !important;
   top: 55px !important;

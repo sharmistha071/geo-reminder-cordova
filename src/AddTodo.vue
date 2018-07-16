@@ -55,7 +55,7 @@
        },
        saveTodo() {
          this.$store.commit('setTodo', this.todo);
-         console.log(this.$store.state.todo);
+         //console.log(this.$store.state.todo);
          //console.log(this.$store.state.todo);
          let geoFenceId = uuidv1();
          this.$store.commit('setGeoFenceId', geoFenceId);
@@ -63,7 +63,7 @@
              id:             geoFenceId, //A unique identifier of geofence
              latitude:       this.$store.state.todo.lat, //Geo latitude of geofence
              longitude:      this.$store.state.todo.long, //Geo longitude of geofence
-             radius:         50, //Radius of geofence in meters
+             radius:         100, //Radius of geofence in meters
              transitionType: 3, //Type of transition 1 - Enter, 2 - Exit, 3 - Both
              notification: {         //Notification object
                  id:             1, //optional should be integer, id of notification
