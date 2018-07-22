@@ -35,13 +35,15 @@
        },
        saveDeviceUUID(id){
          this.$store.commit('setDeviceUUID', id);
-       },
+       }
      },
      mounted(){
+       //this.checkConnection();
        document.addEventListener('deviceready', () => {
+           //this.checkConnection();
            this.saveDeviceUUID(device.uuid);
-           if(localStorage.getIte())
-           localStorage.setItem('device_uuid', device.uuid);
+           // if(localStorage.getIte())
+           // localStorage.setItem('device_uuid', device.uuid);
            window.geofence.initialize().then(function () {
                console.log("Successful initialization");
            }, function (error) {
