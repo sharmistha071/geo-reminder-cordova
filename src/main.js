@@ -16,7 +16,7 @@ Vue.use(VueOnsen);
 Vue.use(axios);
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "AIzaSyANqCc_pPnIa9xZ92iT_gaXocQJedL-mNk",
+    key: "place your key here",
     libraries: "places" // necessary for places input
   }
 });
